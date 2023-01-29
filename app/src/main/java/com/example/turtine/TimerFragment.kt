@@ -27,6 +27,7 @@ class TimerFragment : Fragment() {
     private var itemBinding : ItemListItemBinding? = null
 
 
+
     private val viewModel: InventoryViewModel by activityViewModels {
         InventoryViewModelFactory(
             (activity?.application as InventoryApplication).database.itemDao()
